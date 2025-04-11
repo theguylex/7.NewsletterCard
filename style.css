@@ -58,3 +58,16 @@ form {
     width: 100%;
     position: relative;
 }
+
+form input,
+form button {
+    width: 100%;
+    padding: 14px 0;
+    outline: none;
+}
+
+form input {
+    color: #333;
+    border: 1px solid #a4a4a4;
+    text-align: center;
+}
