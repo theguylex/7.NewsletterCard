@@ -108,12 +108,55 @@ form button:hover {
     left: 50%;
     width: 100%;
     height: 100%;
-    background-color: red;
-    z-index: 2;
+    /*z-index: 2;*/
     transform-origin: top left;
     animation: rotateTop linear 8s infinite;
 }
 
 .border-top {
     background-color: #7284d3;
+    transform: rotate(0deg);
+    animation-name: rotateTop;
+}
+
+.border-right {
+    background-color: #f68693;
+    transform: rotate(-90deg);
+    animation-name: rotateRight;
+}
+
+.border-bottom {
+    background-color: #50dba1;
+    transform: rotate(-180deg);
+    animation-name: rotateBottom;
+}
+
+.border-left {
+    background-color: #f18867;
+    transform: rotate(-270deg);
+    animation-name: rotateLeft;
+}
+
+@keyframes rotateTop {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateRight {
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotateBottom {
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateLeft {
+    to {
+        transform: rotate(90deg);
+}
 }
